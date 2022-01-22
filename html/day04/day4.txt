@@ -1,0 +1,16 @@
+책갈피(bookmark)
+    a 태그의 name 속성 또는 특정 태그의 id 속성을 이용하여
+    책갈피 기능을 활용할 수 있다
+
+    <a href = "">출발</a>
+    ...
+    <a name="test">도착</a>
+    또는
+    <p id="test">도착</p>
+
+아이프레임
+    inline frame의 약자
+    iframe을 이용하면 웹페이지 안에 또 다른 웹페이지를 삽입할 수 있음
+
+    <iframe src="삽입할 페이지 주소 또는 문서위치" style="css 스타일 코드"></iframe>
+    
