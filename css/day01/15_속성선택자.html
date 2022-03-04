@@ -5,6 +5,28 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>속성선택자 1</title>
+    <style>
+        h2[title]{
+            color: green;
+            text-align: center;
+        }
+        [href]{
+            text-decoration: none;
+            color: darkseagreen;
+        }
+        .attr{
+            color: cadetblue;
+        }
+        [class='attr']{
+            text-align: center;
+        }
+        input[type='button']{
+            width: 200px;
+        }
+        .attr+p>a[href="https://www.daum.net"]+a+a{
+            background-color: cornflowerblue;
+        }
+    </style>
 </head>
 <body>
     <h2 title="h2요소의 title 속성">속성 선택자 - 1</h2>
@@ -17,6 +39,10 @@
     </p>
     <p>
         <a href="https://www.daum.net">다음</a>
+        <a href="#">링크2</a>
+        <a href="#">링크3</a>
+        <a href="#">링크4</a>
+        <a href="#">링크5</a>
     </p>
     <input type="text"><input type="button" value="버튼">
 </body>
