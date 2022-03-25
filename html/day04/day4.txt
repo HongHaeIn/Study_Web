@@ -30,6 +30,10 @@ a태그의 target 속성
         여러 입력, 여러 내용들
     </form>
 
+    method 방식
+        get     : url에 데이터를 저장하여 전송하는 방식(속도가 빠르고 보안은 안좋음, 큰파일 못감)
+        post    : body에 데이터를 저장하여 전송하는 방식(속도가 느리고 보안은 좋음, 큰파일 감)
+
 입력상자(input)
     <input type="입력형식">
 
@@ -45,15 +49,81 @@ a태그의 target 속성
         tel         전화번호를 입력받는 글상자(숫자키보드로 형태 바뀜)
         date        원하는 날짜 입력 받는 글상자
         number      원하는 숫자를 입력받는 글상자
-        color
-        search
-        range
-        button
-        submit
-        reset
+        color       원하는 색상을 입력받는 요소
+                    선택한 색상은 16진수 RGB컬러 값으로 전달 
+                    16진수 : 0 1 2 3 4 5 6 7 8 9 A B C D E F 
 
+                    Red     Green     blue
+                    FF      FF        FF    ---> 흰색
+                    00      00        00    ---> 검정색
+                    FF      00        00    ---> 빨간색
+        search      검색어를 입력받는 글상자  
+        range       일정 범위 안에 값들만 입력받는 글상자
+        button      이벤트가 없는 일반 버튼
+        submit      입력받은 데이터를 서버에 제출하는 버튼
+                    속해있는 form의 action 소것ㅇ에 설정한 곳으로 데이터를 전송
+        reset       입력받은 데이터들을 초기화 하는 버튼
 
+그룹(fieldset)
+    폼의 입력 요소를 그룹으로 묶을 때 사용
+    <fieldset>
+        그룹으로 묶을 input들
+    </fieldset>
 
+그룹 제목(legned)
+    fieldset의 제목을 만들 때 사용
+    <fieldset>
+        <legend>그룹제목</legend>
+        입력들
+        ...
+    </fieldset>
+
+라벨
+    input에 이름을 붙이는 태그
+    label 요소와 다른 input 요소와 연결하면 그 input의 영역이 넓어짐
+    radio, checkbox의 스타일을 설정
+
+    <label>텍스트<input></label>
+
+선택상자
+    여러개의 옵션이 드롭다운 리스트로 되어있으며 그 중에서 단 하나의 옵션만을 입력받을 수 있다.
+    <option>요소를 통해 선택할 수 있는 아이템을 설정
+
+    <select name="선택된값이름">
+        <option value="실제값1">내용1</option>
+        <option value="실제값1">내용2</option>
+        ...
+    </select>
+
+데이터 목록
+    미리 지정된 옵션 목록을 보여줌
+    특정 글자를 입력하면 해당하는 지정된 글자를 미리 보여줄 때 사용
+
+    <datalist>
+        <option value="실제값1">내용1</option>
+        <option value="실제값2" label="내용2"></option>
+    </datalist>
+
+여러줄 글상자
+    여러줄의 텍스트를 입력받는 글상자
+    <textarea cols="가로글자수" rows="세로글자수"></textarea>
+
+<input>의 속성들
+    size
+        박스의 크기를 설정하는 속성
+    maxlength
+        값의 최대 길이를 설정하는 속성
+    placeholder
+        입력 전 특정 데이터를 입력하도록 유도(안내)하는 문자열을 설정하는 속성
+    checked
+        여러개의 라디오 또는 체크박스 중에서 미리 
+    readonly
+        데이터를 볼 수 있으나 수정할 수는 없게 설정한느 속성
+    disabled
+        입력필드 자체를 아예 사용할 수 없게 설정하는 속성
+    required
+        데이터를 필수로 입력하도록 지정하는 속성
+        
 
 
 
