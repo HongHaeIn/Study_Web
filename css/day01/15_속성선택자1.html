@@ -4,37 +4,38 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>속성선택자 1</title>
+    <title>속성 선택자 - 1</title>
     <style>
         h2[title]{
-            color: green;
             text-align: center;
         }
         [href]{
             text-decoration: none;
-            color: darkseagreen;
+            color:deeppink;
         }
         .attr{
-            color: cadetblue;
+            background-color: brown;
         }
-        [class='attr']{
-            text-align: center;
+        [class="attr"]{
+            color:white;
         }
-        input[type='button']{
-            width: 200px;
+        input[type=button]{
+            background-color: thistle;
         }
+        
         .attr+p>a[href="https://www.daum.net"]+a+a{
-            background-color: cornflowerblue;
+            background-color: deepskyblue;
         }
     </style>
 </head>
 <body>
-    <h2 title="h2요소의 title 속성">속성 선택자 - 1</h2>
+    <h2 title="h2 요소의 title 속성">속성 선택자 - 1</h2>
     <p>
         <a href="https://www.naver.com">네이버</a>
         <a href="https://www.google.com">구글</a>
+        <a href="#">링크1</a>
     </p>
-    <p class='attr'>
+    <p class="attr">
         속성명과 속성값이 모두 일치하는 요소를 선택자로 지정
     </p>
     <p>
@@ -42,8 +43,7 @@
         <a href="#">링크2</a>
         <a href="#">링크3</a>
         <a href="#">링크4</a>
-        <a href="#">링크5</a>
     </p>
-    <input type="text"><input type="button" value="버튼">
+    <input type="text"> <input type="button" value="버튼">
 </body>
 </html>
