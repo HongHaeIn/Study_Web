@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>가상클래스 선택자</title>
+    <style>
+        .list>li:first-child{color: red;}
+        .list>li:last-child{color: brown;}
+        .list>li:nth-child(2){color: yellow;}
+        .list>li:nth-child(odd){background-color: rgb(253, 213, 220);}
+        .list>li:nth-child(even){background-color: rgb(198, 239, 255);}
+        .list>li:nth-child(1),.list>li:nth-child(4){font-size: 30px;}
+        .list>li:nth-child(3n){font-weight: bold;}
+        .list>li:nth-child(-n+3){list-style: none;} /*3, 2, 1*/
+    </style>
+</head>
+<body>
+    <h2>가상클래스 선택자</h2>
+    <ul class="list">
+        <li>김사과</li>
+        <li>반하나</li>
+        <li>이체리</li>
+        <li>차두리</li>
+        <li>최포도</li>
+        <li>헤이즈</li>
+    </ul>
+</body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>가상요소선택자</title>
+    <style>
+        .tx1::before{
+            content: "❤️";
+        }
+        .tx2::after{
+            content: "😎";
+        }
+        a{
+            text-decoration: none;
+        }
+        a:visited{
+            color: hotpink;
+        }
+        a:link{
+            color: green;
+        }
+        a:hover{
+            color: yellowgreen;
+            font-weight: bold;
+        }
+        a:active{
+            color: mediumpurple;
+        }
+    </style>
+</head>
+<body>
+    <h2>가상 요소 선택자</h2>
+    <p class="tx1">before</p>
+    <p class="tx2">after</p>
+
+    <a href="https://www.naver.com">네이버</a>
+    <a href="https://홍준영하이.com">홍준영</a>
+</body>
+</html>
