@@ -56,7 +56,7 @@ CSS의 컬러
         #0000ff(파란색) -> #00f
 
 컬러 사이트
-    https://meterializecss.com/color.html
+    https://materializecss.com/color.html
 
 CSS의 텍스트
     color
@@ -106,4 +106,24 @@ CSS의 텍스트
             구글 폰트 : https://fonts.google.com/
 
 CSS의 배경
+     background-color  
+        HTML 요소의 배경색을 설정
+    background-image
+        HTML 요소의 배경으로 나타날 배경 이미지를 설정
+        배경 이미지는 기본 설정으로 바둑판 형식으로 반복되어 나타남
+        background-image:url("이미지파일 경로");
+    background-repeat
+        배경이미지를 수평이나 수직방향으로 반복하도록 설정
+        repeat, repeat-x, repeat-y, no-repeat
+    background-position
+        반복되지 않은 배경 이미지의 상대 위치를 설정
+        %나 px를 사용해서 상대위치를 직접 설정할 수 있음
+        상대 위치를 결정하는 기준은 해당 요소의 왼쪽 상단
+
+        left top        center top      right top
+        left center     center          right center
+        left bottom     cemter bottom   right bottom
+
+    background-position : 가로 위치값 세로위치값;
+    
     
