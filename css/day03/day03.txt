@@ -57,4 +57,5 @@ background
     border-color    : 테두리의 색상을 설정
     border-width    : 테두리의 두께를 설정
     border          : 모든 테두리의 속성을 한꺼번에 설정
-           
+    
+    1일 1커밋
