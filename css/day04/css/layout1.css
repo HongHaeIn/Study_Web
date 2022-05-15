@@ -1,0 +1,30 @@
+#container{
+    width: 1000px;
+    margin:0 auto;
+}
+div{
+    padding: 20px;
+    border: 1px solid gray;
+}
+#header{
+    margin-bottom: 20px;
+    background-color: rgb(255, 252, 249);
+}
+#contents{
+    width: 700px;
+    float: left;
+    background-color: rgb(255, 247, 205);
+    margin-bottom: 20px;
+    height: 500px;
+}
+#sidebar{
+    width: 200px;
+    float: right;
+    background-color: aliceblue;
+    height: 500px;
+}
+#footer{
+    margin-top: 20px;
+    background-color: rgb(255, 221, 226);
+    clear: left;
+}

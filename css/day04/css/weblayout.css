@@ -1,0 +1,41 @@
+#container{
+    width: 1000px;
+    margin: 0 auto;
+}
+div{
+    border: 1px solid darkgray;
+    padding: 20px;
+}
+#header{
+    background-color: rgb(255, 154, 204);
+    margin-bottom:20px ;
+}
+#sidebar1{
+    width: 200px;
+    height: 500px;
+    background-color: rgb(154, 186, 255);
+    float: left;
+    margin-right: 20px;
+    box-sizing: border-box;
+}
+#contents{
+    width: 560px;
+    height: 500px;
+    background-color: rgb(195, 255, 202);
+    float: left;
+    margin-right: 20px;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+}
+#sidebar2{
+    width: 200px;
+    height: 500px;
+    background-color: rgb(255, 240, 154);
+    float: right;
+    box-sizing: border-box;
+}
+#footer{
+    background-color: rgb(255, 178, 154);
+    clear: both;
+    height: 120px;
+}
